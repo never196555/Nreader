@@ -1,0 +1,17 @@
+# 运行时生成
+reader_config.json
+reader_error.log
+*.tmp
+
+# 打包产物
+build/
+dist/
+*.spec
+
+# Python
+__pycache__/
+*.pyc
+
+# 旧版迁移残留
+打赏码/
+sys_cache.dat.bak
