@@ -1,0 +1,47 @@
+Nreader - Python 环境安装指引
+================================================
+
+如果你双击“Start-Python-Mode.bat”后看到本说明，说明这台电脑还没有安装 Python。
+安装一次即可（免费、安全、约 2 分钟），之后双击 novel_reader.pyw 就能直接阅读。
+
+【安装步骤】
+1. 打开 Python 官网下载页面：
+   https://www.python.org/downloads/
+   （若打不开或下载慢，可用国内镜像：
+     https://mirrors.huaweicloud.com/python/ ）
+
+2. 点击黄色按钮 “Download Python 3.x.x” 下载安装包。
+
+3. 运行下载的安装包（python-3.x.x-amd64.exe）。重要：
+   * 务必勾选安装窗口最底部的 “Add python.exe to PATH” *
+   （漏掉这一步会导致之后找不到 Python）
+
+4. 点击 “Install Now”，等待安装完成，点 Close 关闭。
+
+【安装完成后】
+回到“Nreader”文件夹，双击 novel_reader.pyw
+（或再次双击“Start-Python-Mode.bat”）即可开始阅读。
+
+【可选：导入 PDF / MOBI 等格式需要的组件】
+Python 版导入 TXT/EPUB/DOCX/HTML 无需任何组件；
+如需导入 PDF、MOBI/AZW3，请再执行一条命令（仅一次）：
+   python -m pip install pypdf mobi
+（exe 版已自带这些组件，无需此步。）
+
+【提示：其实可以直接用 exe 版】
+同文件夹里的“Nreader.exe”不需要安装任何东西，双击即用。
+只有当 exe 打不开、被拦截或被杀毒软件删除时，才需要走 Python 安装流程。
+两种模式功能完全相同，共用同一个 novels 小说文件夹和同一份阅读进度。
+
+【常见问题】
+Q: 安装时忘了勾选 Add python.exe to PATH 怎么办？
+A: 重新运行安装包 → 选 Modify → 勾上该选项；或卸载后重装（这次务必勾选）。
+
+Q: 安装报错或下载很慢？
+A: 用上面的华为云镜像地址下载对应版本即可。
+
+Q: 双击 novel_reader.pyw 弹出“选择打开方式”？
+A: 说明 Python 尚未安装成功，按上面步骤重新安装；装好后 .pyw 会自动关联。
+
+Q: 还是不行？
+A: 发邮件描述问题：1965552741@qq.com
