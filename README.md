@@ -21,6 +21,16 @@
 
 下载本仓库中的 `Nreader.exe`，双击即可使用（无需安装任何环境）；也可到 [Releases](../../releases) 下载打包好的 `Nreader-Release.zip`（含使用说明）。
 
+## 从源码运行
+
+本仓库完整公开 Python 源码（`novel_reader.pyw`，单文件、纯 Python）：
+
+1. 安装 [Python 3](https://www.python.org/downloads/)（安装时务必勾选 "Add python.exe to PATH"，详见 `Install-Python.txt`）
+2. 双击 `Start-Python-Mode.bat`（或 `pythonw novel_reader.pyw`）即可运行
+3. 可选：导入 PDF / MOBI 需执行 `python -m pip install pypdf mobi`（TXT/EPUB/DOCX/HTML 无需任何依赖）
+
+源码模式与 exe 版功能完全相同，共用 `novels/` 小说目录和阅读进度。
+
 ## 使用说明
 
 - **导入小说**：按 `F1` 打开设置 → 点击「导入小说」，选择 TXT/EPUB/MOBI/AZW3/PRC/PDF/DOCX/HTML 文件；也可直接把 `.txt` 文件放进 `novels` 目录
@@ -41,6 +51,9 @@
 ```
 Nreader/
 ├── Nreader.exe           # 可直接运行的单文件版（免安装）
+├── novel_reader.pyw      # Python 源码（单文件，可直接运行）
+├── Start-Python-Mode.bat # 源码模式启动器（无 Python 时打开安装指引）
+├── Install-Python.txt    # Python 环境安装指引
 ├── sys_cache.dat         # 打赏收款码数据
 ├── docs/
 │   └── 使用说明.md        # 完整使用说明
